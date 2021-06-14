@@ -14,37 +14,40 @@ body {
   &__img {
     max-width: 350px;
   }
+  .menu {
+    &__list {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #eaeaeb;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 20px 0;
+    }
+    &__item {
+      position: relative;
+    }
+    &__item::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -3px;
+      margin: auto;
+      height: 15px;
+      width: 1px;
+    }
+
+    &__item .item {
+      padding: 0 10px;
+      color: #464646;
+      font-style: bold;
+    }
+    &__item .item:hover {
+      color: black;
+    }
+  }
 }
 
-.header__logo .header__menu .menu__list {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #eaeaeb;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding: 20px 0;
-}
-.header__menu .menu__list .menu__item {
-  position: relative;
-}
-.header__menu .menu__list .menu__item::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -3px;
-  margin: auto;
-  height: 15px;
-  width: 1px;
-}
-.header__menu .menu__list .menu__item .item {
-  padding: 0 10px;
-  color: #464646;
-  font-style: bold;
-}
-.header__menu .menu__list .menu__item .item:hover {
-  color: black;
-}
 .search__bar {
   font-family: "Open Sans", sans-serif;
   background-image: $search;
@@ -79,9 +82,7 @@ body {
   font-family: "Open Sans", sans-serif;
   display: inline-block;
 }
-// .products {
 
-// }
 .copyright {
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -123,11 +124,12 @@ body {
   color: black;
   padding: 0 4px;
   margin: 1rem auto;
+  max-width: 400px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.contacts .img {
-  margin: 2rem;
+.contacts li {
+  margin: 1rem;
   text-align: center;
 }
