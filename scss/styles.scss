@@ -56,17 +56,16 @@ body {
   background-repeat: no-repeat;
   background-position: 1px;
   border-radius: 5px;
-  font-weight: 700;
+  font-weight: bolder;
   border: 2px solid gainsboro;
-  width: 100%;
-  height: 34px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
+  width: 1232px;
   display: flex;
   color: gray;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  padding-left: 40px;
 }
 .breadcrumbs .crumbs {
   display: flex;
@@ -75,11 +74,15 @@ body {
   border-bottom: 1px solid #eaeaeb;
 }
 .crumb {
-  padding: 3px 0 2px 0;
+  padding: 10px 0 10px 0;
+  margin-left: 10px;
+}
+input::placeholder {
+  padding: 3rem;
 }
 .breadcrumbs li,
 .breadcrumbs a {
-  color: #eaeaeb;
+  color: #585858;
   font-weight: bold;
 }
 .crumb:not(:last-child):after {
@@ -88,6 +91,7 @@ body {
 }
 .breadcrumbs a:hover {
   text-decoration: underline;
+  color: black;
 }
 .crumb:after {
   content: "/";
