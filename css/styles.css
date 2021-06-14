@@ -140,4 +140,10 @@ body {
   text-align: center;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(3, 350px);
+}
+
 /*# sourceMappingURL=styles.css.map */
