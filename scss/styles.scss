@@ -103,7 +103,7 @@ input::placeholder {
 }
 
 .copyright {
-  text-align: center;
+  text-align: left;
   font-family: "Open Sans", sans-serif;
   padding: 20px 0;
 }
@@ -120,20 +120,31 @@ input::placeholder {
   align-items: center;
   background-color: #ffffff;
 }
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5px;
+}
 .social {
-  text-align: center;
   font-family: "Open Sans", sans-serif;
-  padding: 20px 0;
+  padding: 10px 0;
   font-weight: 800;
 }
-.social a p {
+.social p {
+  text-align: center;
+  width: 64px;
+}
+.social a {
+  margin: 0 16px;
   color: black;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  padding: 20px 0;
+  padding: 10px 0;
   font-weight: 800;
 }
-
+.complaints {
+  text-align: center;
+}
 .payment {
   text-align: center;
   font-weight: 800;
@@ -172,7 +183,12 @@ input::placeholder {
   margin: 1rem;
   text-align: center;
 }
-
+.container__contacts {
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
 .container__produtos {
   max-width: 960px;
   margin: 0 auto;
@@ -181,7 +197,9 @@ input::placeholder {
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.contact {
+  border-right: solid 2px gainsboro;
+}
 .item {
   width: 200px;
   margin: 1rem 2rem;
