@@ -35,13 +35,15 @@ body {
   height: 15px;
   width: 1px;
 }
-.header .menu__item .item {
+.header .menu__link .link {
   padding: 0 10px;
   color: #464646;
   font-style: bold;
 }
-.header .menu__item .item:hover {
+.header .menu__link .link:hover {
   color: black;
+  text-decoration: underline;
+  font-size: 400;
 }
 
 .search__bar {
@@ -64,17 +66,34 @@ body {
 }
 
 .breadcrumbs .crumbs {
-  color: black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   font-family: "Open Sans", sans-serif;
-  margin-top: 10px;
+  border-bottom: 1px solid #eaeaeb;
 }
 
-.breadcrumbs .crumbs .crumb a {
-  color: black;
-  display: inline;
+.crumb {
+  padding: 3px 0 2px 0;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+  color: #eaeaeb;
+  font-weight: bold;
+}
+
+.crumb:not(:last-child):after {
+  content: "/";
+  margin-right: 5px;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.crumb:after {
+  content: "/";
+  margin: 0 10px 10px;
 }
 
 .filters .filter {
@@ -160,6 +179,13 @@ body {
 
 .item img {
   width: 100%;
+}
+
+.filters .filter {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
