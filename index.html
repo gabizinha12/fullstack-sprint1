@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riachuelo</title>
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script>
@@ -18,41 +20,41 @@
     </script>
   </head>
   <body>
-    <header>
-      <h1>
-        <img src="assets/riachuelo.svg" alt="" />
+    <header class="header">
+      <h1 class="header__logo">
+        <img src="assets/riachuelo.svg" alt=""  class="header__img"/>
       </h1>
-      <input type="search" placeholder="O quê você está procurando" />
-      <nav>
-        <ul>
-          <li><a href="">Novidades</a></li>
-          <li><a href="">Feminimo</a></li>
-          <li><a href="">Masculino</a></li>
-          <li><a href="">Infantil</a></li>
-          <li><a href="">Moda Íntima</a></li>
-          <li><a href="">Calçados</a></li>
-          <li><a href="">Acessórios e Relógios</a></li>
-          <li><a href="">Beleza e Perfume</a></li>
-          <li><a href="">Casa Riachuelo</a></li>
-          <li><a href="">Eletrônicos</a></li>
-          <li><a href="">Personagens</a></li>
-          <li><a href="">Outlet</a></li>
+      <input type="search" placeholder="O quê você está procurando"  class="search__bar"/>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="" class="item">Novidades</a></li>
+          <li class="menu__item"><a href="" class="item">Feminino</a></li>
+          <li class="menu__item"><a href="" class="item">Masculino</a></li>
+          <li class="menu__item"><a href="" class="item">Infantil</a></li>
+          <li class="menu__item"><a href="" class="item">Moda Íntima</a></li>
+          <li class="menu__item"><a href="" class="item">Calçados</a></li>
+          <li class="menu__item"><a href="" class="item">Acessórios e Relógios</a></li>
+          <li class="menu__item"><a href="" class="item">Beleza e Perfume</a></li>
+          <li class="menu__item"><a href="" class="item">Casa Riachuelo</a></li>
+          <li class="menu__item"><a href="" class="item">Eletrônicos</a></li>
+          <li class="menu__item"><a href="" class="item">Personagens</a></li>
+          <li class="menu__item"><a href="" class="item">Outlet</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="breadcrumbs">
         <nav>
-          <ol>
-            <li><a href="">Home</a></li>
-            <li><a href="">Infantil</a></li>
-            <li><a href="">Personagens</a></li>
-            <li>Mario Bros</li>
+          <ol class="crumbs">
+            <li class="crumb"><a href="">Home</a></li>
+            <li class="crumb"><a href="">Infantil</a></li>
+            <li class="crumb"><a href="">Personagens</a></li>
+            <li class="crumb">Mario Bros</li>
           </ol>
         </nav>
       </section>
       <section class="filters">
-        <ul>
+        <ul class="filter">
           <li>Tamanho</li>
           <li>Cor</li>
           <li>Departamento</li>
@@ -64,7 +66,7 @@
       <section class="products">
         <ol>
           <li>
-            <div>
+            <div class="product">
               <img src="assets/c1.webp" alt="Camisa 1" />
               <p>
                 Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18
@@ -73,7 +75,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="product">
               <img src="assets/c2.webp" alt="Camisa 1" />
               <p>
                 Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18
@@ -82,7 +84,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="product">
               <img src="assets/c3.webp" alt="Camisa 1" />
               <p>
                 Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18
@@ -91,7 +93,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="product">
               <img src="assets/c4.webp" alt="Camisa 1" />
               <p>
                 Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18
@@ -100,7 +102,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="product">
               <img src="assets/c5.webp" alt="Camisa 1" />
               <p>
                 Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18
@@ -109,7 +111,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="product">
               <img src="assets/c6.webp" alt="Camisa 1" />
               <p>
                 Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18
@@ -118,7 +120,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="product">
               <img src="assets/c7.webp" alt="Camisa 1" />
               <p>
                 Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18
@@ -223,32 +225,32 @@
             <div>
               <h3>Cartão Riachuelo</h3>
               <ul>
-                <li><a href="">Midway Financeira</a></li>
-                <li><a href="">Saiba como adquirir</a></li>
-                <li><a href="">Veja sua fatura e extrato</a></li>
-                <li><a href="">Buscando quitar suas dívidas?</a></li>
+                <li><a href="#">Midway Financeira</a></li>
+                <li><a href="#">Saiba como adquirir</a></li>
+                <li><a href="#">Veja sua fatura e extrato</a></li>
+                <li><a href="#">Buscando quitar suas dívidas?</a></li>
               </ul>
             </div>
           </li>
           <li>
-            <div>
+            <div class="sobre">
               <h3>Sobre a Riachuelo</h3>
               <ul>
-                <li><a href="">A Empresa</a></li>
-                <li><a href="">Portal de Fornecedores</a></li>
-                <li><a href="">Relação com Investidores</a></li>
-                <li><a href="">Assessoria de Imprensa</a></li>
-                <li><a href="">Trabalhe Conosco</a></li>
-                <li><a href="">Programa Jovem Aprendiz</a></li>
-                <li><a href="">Cadastro de Startups</a></li>
-                <li><a href="">Mapa do Site</a></li>
-                <li><a href="">Guide Shop</a></li>
-                <li><a href="">Venda na Riachuelo Marketplace</a></li>
+                <li><a href="#">A Empresa</a></li>
+                <li><a href="#">Portal de Fornecedores</a></li>
+                <li><a href="#">Relação com Investidores</a></li>
+                <li><a href="#">Assessoria de Imprensa</a></li>
+                <li><a href="#">Trabalhe Conosco</a></li>
+                <li><a href="#">Programa Jovem Aprendiz</a></li>
+                <li><a href="#">Cadastro de Startups</a></li>
+                <li><a href="#">Mapa do Site</a></li>
+                <li><a href="#">Guide Shop</a></li>
+                <li><a href="#">Venda na Riachuelo Marketplace</a></li>
               </ul>
             </div>
           </li>
           <li>
-            <div>
+            <div class="action">
               <h3>Moda que Transforma</h3>
               <ul>
                 <li><a href="">Na prática</a></li>
@@ -260,7 +262,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="ajuda">
               <h3>Ajuda</h3>
               <ul>
                 <li><a href="">Atendimento</a></li>

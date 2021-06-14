@@ -1,3 +1,82 @@
+$search: url("../assets/search.svg");
+
 body {
-  color: red;
+  background: #fff;
+  color: black;
 }
+.header {
+  font-family: "Open Sans", sans-serif;
+}
+.header__logo {
+  text-align: center;
+  margin-top: 1rem;
+}
+.header__logo .header__img {
+  max-width: 350px;
+}
+.header__menu .menu__list {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #eaeaeb;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px 0;
+}
+.header__menu .menu__list .menu__item {
+  position: relative;
+}
+.header__menu .menu__list .menu__item::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -3px;
+  margin: auto;
+  height: 15px;
+  width: 1px;
+}
+.header__menu .menu__list .menu__item .item {
+  padding: 0 10px;
+  color: #464646;
+  font-style: bold;
+}
+.header__menu .menu__list .menu__item .item:hover {
+  color: black;
+}
+.search__bar {
+  font-family: "Open Sans", sans-serif;
+  background-image: $search;
+  background-repeat: no-repeat;
+  background-position: 1px;
+  border-radius: 5px;
+  border-color: gainsboro 2px solid;
+  font-weight: 700;
+  width: 100%;
+  height: 34px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  color: gray;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumbs .crumbs {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+}
+.breadcrumbs .crumbs .crumb a {
+  color: black;
+  display: inline;
+}
+.filters .filter {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+}
+// .products {
+
+// }
