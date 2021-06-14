@@ -1,7 +1,7 @@
 $search: url("../assets/search.svg");
 
 body {
-  background: #fff;
+  background: #f6f6f6;
   color: black;
   font-family: "Open Sans", sans-serif;
 }
@@ -110,18 +110,31 @@ input::placeholder {
 .accessibility {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  padding: 20px 0;
+  padding: 10px 0;
+  font-weight: 800;
+}
+.container__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
 }
 .social {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   padding: 20px 0;
+  font-weight: 800;
 }
+
 .payment {
   text-align: center;
+  font-weight: 800;
   font-family: "Open Sans", sans-serif;
   padding: 20px 0;
+  justify-content: center;
 }
+
 .links {
   text-align: center;
   font-family: "Open Sans", sans-serif;
