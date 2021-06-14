@@ -133,10 +133,24 @@ body {
   margin: 1rem;
   text-align: center;
 }
-.products {
-  display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(3, 350px);
-}
+
 .container__produtos {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  margin: 1rem 2rem;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  gap: 20px 10px;
+}
+.item img {
+  width: 100%;
 }
