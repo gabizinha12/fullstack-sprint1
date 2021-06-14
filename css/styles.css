@@ -7,17 +7,15 @@ body {
 .header {
   font-family: "Open Sans", sans-serif;
 }
-
 .header__logo {
   text-align: center;
   margin-top: 1rem;
 }
-
-.header__logo .header__img {
+.header__img {
   max-width: 350px;
 }
 
-.header__menu .menu__list {
+.header__logo .header__menu .menu__list {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #eaeaeb;
@@ -132,12 +130,18 @@ body {
 }
 
 .contacts {
-  text-align: center;
   font-family: "Open Sans", sans-serif;
   color: black;
   padding: 0 4px;
+  margin: 1rem auto;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contacts .img {
+  margin: 2rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
